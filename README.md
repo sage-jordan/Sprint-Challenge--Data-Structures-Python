@@ -77,7 +77,7 @@ For example,
 ```
 1->2->3->None
 ```
-would become...
+would become... [1, 2, 3]   [1]
 ```
 3->2->1->None
 ```
