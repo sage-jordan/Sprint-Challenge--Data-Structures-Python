@@ -76,13 +76,14 @@ f.close()
 duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
+""" Runtime 7.91s """
 # for name_1 in names_1:
-#     for name_2 in names_2:
-#         if name_1 == name_2:
-#             duplicates.append(name_1)
+    # for name_2 in names_2:
+    #     if name_1 == name_2:
+    #         duplicates.append(name_1)
 
-# duplicates = [ name for name in names_1 if name in names_2 ] 
-
+""" FINAL RUNTIME 1.11s """
+# wrote BSTNode above
 bst = BSTNode("empty_Node")
 for name_1 in names_1:
     bst.insert(name_1)
@@ -99,3 +100,5 @@ print (f"runtime: {end_time - start_time} seconds")
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
+""" Runtime 1.25s """
+# duplicates = [ name for name in names_1 if name in names_2 ] 
